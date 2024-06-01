@@ -17,6 +17,11 @@ app.use(cors());
 app.use(express.json());
 env.config();
 
+app.get('/', (req, res) => {
+	res.send('Hello to Ledger App');
+
+}
+
 // Routes
 app.use('/api/user', userRouter);
 app.use('/api/admin', adminRouter);
