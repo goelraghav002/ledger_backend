@@ -20,7 +20,7 @@ env.config();
 app.get('/', (req, res) => {
 	res.send('Hello to Ledger App');
 
-}
+})
 
 // Routes
 app.use('/api/user', userRouter);
